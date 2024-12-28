@@ -37,6 +37,18 @@ admin.site.register(Post)
 
 
 
+GIT:
+git --version
+git config --global user.name "dmitry-sol"
+git config --global user.email "dmitry-sol@mail.ru"
+git init
+git remote remove origin
+git remote add origin https://github.com/dmitry-sol/Module_18.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+
 - - - - - - - - - - - - -
 Запуск сервера разработки:
 python manage.py runserver
