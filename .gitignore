@@ -4,5 +4,6 @@ venv/
 *.txt
 !requirements.txt
 draft.html
+draft_3.html
 __pycache__/
 *.pyc
