@@ -1,0 +1,18 @@
+{% extends 'fourth_task/index0.html' %}
+{% block title %}Каталог товаров{% endblock %}
+{% block header %}Каталог товаров{% endblock %}
+
+{% block content %}
+<h3>Список товаров</h3>
+<ul>
+    {% for i in items.items %}
+        <li>
+            <div style="height: 30px">
+                <div class="h-100 d-inline-block" style="width: 120px">{{ i }}</div>
+                <div class="h-100 d-inline-block" style="width: 120px"><a href="#" class="text-warning">Купить</a></div>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'fourth_index' %}" class="text-primary">На главную</a>
+{% endblock %}

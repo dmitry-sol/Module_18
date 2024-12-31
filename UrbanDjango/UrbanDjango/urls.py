@@ -24,4 +24,5 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html'), name='home'),  # Главная страница
     path('second_task/', include('task2.urls')),
     path('third_task/', include('task3.urls')),
+    path('fourth_task/', include('task4.urls')),
 ]
